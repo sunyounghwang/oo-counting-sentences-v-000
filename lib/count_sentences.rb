@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    split_array = self.split(/[.?!]/).delete_if { |s| s == "" }.count
+    split_array = self.split(/[.?!]/).delete_if { |s| s == "" }.size
   end
 end
